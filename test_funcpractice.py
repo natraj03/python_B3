@@ -1,25 +1,21 @@
-from function_prractice import  multi
-
-def test_multipliction():
-
-    result = multi(6,6)
-    assert result == 36
-
-    result2 = multi(6, -6)
-    assert result2 == -36
-
-    result3 = multi(-6, -6)
-    assert result3 == 36
-
-    result4 = multi(0, -6)
-    assert result4 == 0
-
-def test_multipliction2():
-
-    result = multi(7,6)
-    assert result == 42
+from programpractice import rev_str, is_palendrome
 
 
-    result2 = multi(7, -6)
-    assert result2 == -36
+def test_revstring_fun():
+    result = rev_str("INDIA")
+    assert result == "AIDNI"
+    assert rev_str("98 76") == "67 89"
+    assert rev_str("India") == "aidnI"
+    assert rev_str("") == ""
+
+
+def test_palen():
+    assert is_palendrome("India") == False
+    assert is_palendrome("MALAYALAM") == True
+    assert is_palendrome("india") == False
+    assert is_palendrome("malayalam") == True
+
+
+
+
 

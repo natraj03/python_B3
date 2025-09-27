@@ -1,44 +1,35 @@
-
-# print("this is index 1")
-# print("this is index 2")
-
-# find a given string is palendrome or not
-# input = "malayalam"
-# output = "is palendrome"
-# input = "Mango"
-# output = "Not a palendrome"
+# palendrome
+# "MOM"  "MOM" = palendrome
+# "Apple"  "elppA" = not a palendrome
 
 
-def reverseSTR(inpstr):
-    result = inpstr[:2:-1]
-    return  result
+def rev_str(inpstr):
+    revstr = ""
+    for char in inpstr:
+        revstr = char + revstr
+    return revstr
 
-def checkPalendrome(inputstr):
+def is_palendrome(inp):
+    revStr = rev_str(inp)
 
-    if reverseSTR(inputstr) == inputstr:
+    if revStr == inp:
+        print(revStr, " is Palendrome")
         return True
     else:
-        return False
+        print(revStr, " is not a Palendrome")
+        return  False
+
+
+# is_palendrome("india")
+# is_palendrome("malayalam")
+# is_palendrome("9898989")
+# is_palendrome("1234566543210")
 
 
 
-def test_palendrrome():
-    # none
-    # assert checkPalendrome(None) == False, "Assertion failed: for None as an argument"
-
-    # single character
-    assert checkPalendrome("12122a") == True
-    # case sensitive
-    assert checkPalendrome("Malayalam") == False
-
-    # with numbers
-    assert checkPalendrome("12321") == True
-    assert checkPalendrome("malayalam") == True
-    assert checkPalendrome("MALAYALAM") == True
 
 
-def revstr():
-    pass
+
 
 
 
