@@ -4,7 +4,7 @@
 
 def valid_int_only(fun):
     def wrapper(inparrg1,inparg2):
-        if type(inparrg1) == int and type(inparg2) == int:
+        if type(inparrg1) == int and type(inparg2) == int && inparg2 > 10:
             print("before the fuction executed ******")
             return fun(inparrg1,inparg2)
             print("Afterr the fuction executed ******")
@@ -12,7 +12,6 @@ def valid_int_only(fun):
             print("Please enterr a valid integers")
     return wrapper
 
-@valid_int_only
 def mult(inp1,inp2):
     return inp1 * inp2
    
