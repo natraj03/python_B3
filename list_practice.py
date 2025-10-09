@@ -5,8 +5,8 @@
 # # #
 name_list = ["jeet",name2,"biswajeet",name_str3]
 # # print(name_list)
-# # name_list.append("krushna")
-# # name_list.append(1234)
+# name_list.append("krushna")
+# name_list.append(1234)
 # # print(name_list)
 # # name_list.pop()
 # # print(name_list)
